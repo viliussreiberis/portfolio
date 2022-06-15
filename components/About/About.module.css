@@ -1,0 +1,9 @@
+.img {
+  object-fit: contain;
+  display: none;
+}
+
+.imgContainer {
+  background-image: url(/programming-coding.svg);
+  background-size: cover;
+}

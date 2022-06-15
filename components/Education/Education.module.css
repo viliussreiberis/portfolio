@@ -1,0 +1,92 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.educationContainer {
+  width: 100%;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 0.13fr 0.87fr;
+  align-items: center;
+  background-color: red;
+  border-radius: var(--main-radius);
+  padding: 2rem 2rem;
+  background-color: var(--secondary-background-color);
+
+  align-self: flex-start;
+}
+
+.education:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+.imgOwl {
+  height: 100%;
+  width: 100%;
+}
+
+.imgContainer {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 80%;
+  height: 80%;
+}
+
+.year {
+  font-size: 1.2rem;
+  color: var(--primary-color-2);
+}
+
+.university {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.degree {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .imgContainer {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education {
+    grid-template-columns: 0.1fr 0.9fr;
+  }
+
+  .educationContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .education {
+    grid-template-columns: 1fr;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--main-radius);
+  background-color: var(--secondary-background-color);
+  height: 16rem;
+  color: #fff;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}

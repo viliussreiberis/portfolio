@@ -1,0 +1,32 @@
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.contact:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+
+.imgContainer {
+  background-color: var(--primary-color-2);
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+
+  .contacts {
+    justify-self: flex-start;
+    margin-top: 4rem;
+  }
+}

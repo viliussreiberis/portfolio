@@ -1,0 +1,79 @@
+.mobileHeader {
+  display: none;
+}
+
+.hamburgerContainer {
+  position: fixed;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2.5rem;
+  right: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.circleContainer {
+  border-radius: 50%;
+  background-color: #fff;
+  position: fixed;
+  width: 25rem;
+  height: 25rem;
+  top: -25rem;
+  right: -20rem;
+  transition: all ease-out 1s;
+  z-index: 4;
+  transform: scale(8);
+}
+
+.circleContainer.show {
+  transform: scale(8);
+}
+
+.circleContainer.hide {
+  width: 0rem;
+  height: 0rem;
+}
+
+.mobileNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 9rem 1rem 3rem;
+  transition: all ease-out 1s;
+  z-index: 5;
+  color: black;
+}
+
+.mobileNav.show {
+  transform: translateX(0);
+}
+.mobileNav.hide {
+  transform: translateX(70rem);
+}
+
+.link {
+  color: black;
+  font-size: 2.4rem;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 785px) {
+  .mobileHeader {
+    display: block;
+  }
+
+  .hamburgerContainer {
+    right: 4rem;
+    top: 3.5rem;
+  }
+}
