@@ -39,9 +39,6 @@ const Education = () => {
               <h2 className={styles.university}>
                 Vilnius Gediminas Technical University
               </h2>
-              <h3 className={styles.degree}>
-                Master of road safety engineering
-              </h3>
             </div>
           </div>
         </div>
